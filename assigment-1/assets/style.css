@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Reenie+Beanie&family=Ruslan+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  transition: 150ms all ease-in-out;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flexRow {
+  flex-direction: row;
+}
+
+.flexColumn {
+  flex-direction: column;
+}
+
+.flexContainer {
+  display: flex;
+  padding: 1em 0;
+  gap: 20px;
+}
+
+.mainHeader {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  padding: 0 1em;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  box-shadow: 2px 5px 5px 2px #f1f1f1;
+  position: sticky;
+  top: 0;
+  height: 70px;
+}
+
+.mainLogo {
+  cursor: pointer;
+  height: 90px;
+  position: relative;
+}
+.mainLogo h1 {
+  font-family: "Ruslan Display", cursive;
+  font-size: 100px;
+  letter-spacing: 7px;
+  text-decoration: none;
+  text-align: center;
+}
+.mainLogo p {
+  background-color: white;
+  font-family: "Reenie Beanie", cursive;
+  font-size: 20px;
+  letter-spacing: 3px;
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  width: 200px;
+  z-index: 2;
+}
+.mainLogo p:hover {
+  color: #3d3d3d;
+}
+
+.menuWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+}
+
+.menuItem > a {
+  font-size: 1em;
+  font-weight: 500;
+  color: #7d7d7f;
+}
+
+.menuItem:hover > a {
+  color: #3d3d3d;
+}
+
+.searchBox {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+}
+
+.searchBox input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #7d7d7f;
+  margin-right: 1em;
+}
+
+.searchBox button {
+  border: none;
+  padding: 0.3em;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.searchBox img {
+  width: 1.2em;
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 100px;
+  height: 90vh;
+  max-width: 100%;
+  gap: 50px;
+}
+
+.rotatedText {
+  transform: rotate(-35deg);
+  width: 50px;
+  color: #8873ef;
+  margin-left: -0.5em;
+}
+
+.colHero1 {
+  width: 500px;
+  margin-left: 30px;
+}
+
+.mainTitle {
+  font-size: 2.5em;
+  color: #000000;
+  margin-bottom: 0.5em;
+}
+
+.mainTitle h1 {
+  font-weight: 400;
+}
+
+.flexContainer > p {
+  margin-bottom: 2em;
+}
+
+.line {
+  width: 3em;
+  border: solid black;
+  border-width: 2px 0 0;
+  margin-right: 1em;
+  margin-top: 0.5em;
+  margin-left: 0.3em;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.primaryBtn {
+  background-color: #8873ef;
+  width: 150px;
+  text-align: center;
+  padding: 1em;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.primaryBtn > a {
+  color: white;
+}
+
+.primaryBtn:hover {
+  background-color: white;
+  border: solid #8873ef 2px;
+}
+
+.primaryBtn:hover > a {
+  color: #8873ef;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2em;
+  margin-top: 4em;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.colHero2 {
+  width: 900px;
+  position: relative;
+  margin-right: 100px;
+}
+
+.heroImg {
+  width: 600px;
+  margin-left: 50px;
+}
+
+.quote {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  top: 50px;
+  right: 20px;
+  width: 250px;
+  height: 550px;
+  justify-content: space-between;
+}
+
+.quoteText {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.rotated {
+  display: flex;
+  flex-direction: row;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 320px;
+  width: 500px;
+  height: 20px;
+}
+
+.rotated p {
+  color: #3d3d3d;
+}
+
+.lineRotate {
+  width: 300px;
+  border: solid #7d7d7f;
+  border-width: 2px 0 0;
+  margin-right: 1em;
+  margin-top: 0.5em;
+  margin-left: 0.3em;
+}
