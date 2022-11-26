@@ -15,9 +15,14 @@
     <title>Wisnu Budi Laksono</title>
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/6ae0fc221d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header class="mainHeader">
+    <div class="cursor"></div>
+    <header id="top" class="main-header cursor-change">
       <div class="mainLogo">
         <h1>WB</h1>
         <p>Wisnu Budi Laksono</p>
@@ -25,9 +30,9 @@
       <nav class="mainMenu">
         <ul class="menuWrapper">
           <li class="menuItem"><a href="./index.html">Home</a></li>
-          <li class="menuItem"><a href="./tentang.html">About Me</a></li>
-          <li class="menuItem"><a href="./artikel.html">Blog</a></li>
-          <li class="menuItem"><a href="./kontak.html">Contact</a></li>
+          <li class="menuItem"><a href="#about">About Me</a></li>
+          <li class="menuItem"><a href="./posts.html">Blog</a></li>
+          <li class="menuItem"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="searchBox">
@@ -45,17 +50,15 @@
       </div>
     </header>
 
-    <main class="heroContent">
-      <div class="heroContainer">
+    <section id="hero" class="main-container cursor-change">
+      <div class="hero-container">
         <div class="colHero1">
           <div class="rotatedText">
-            <p>Hello!</p>
+            <p class="scale-effect">Hello!</p>
           </div>
-
           <div class="mainTitle">
-            <h1>Consult Design and Develop</h1>
+            <h1 class="cursor-scale">Consult Design and Develop</h1>
           </div>
-
           <div class="flexContainer flexRow">
             <div class="line"></div>
             <p>
@@ -63,38 +66,48 @@
               interface design for companies all across the world.
             </p>
           </div>
-
           <div class="flexContainer">
             <div class="primaryBtn">
-              <a href="#">Let's Talk </a>
+              <a class="scale-effect" href="#">Let's Talk </a>
             </div>
           </div>
-
           <div class="social">
             <p>Check Out My</p>
             <div class="socialMedia">
               <a href="https://www.facebook.com/wisnu.networkproblem/"
-                ><img src="./assets/img/facebook.png" alt="fb"
+                ><img
+                  class="scale-effect"
+                  src="./assets/img/facebook.png"
+                  alt="fb"
               /></a>
               <a href="https://www.instagram.com/w.psychonaut/"
-                ><img src="./assets/img/instagram.png" alt="ig"
+                ><img
+                  class="scale-effect"
+                  src="./assets/img/instagram.png"
+                  alt="ig"
               /></a>
               <a href="https://github.com/pr1m34c4d3my/"
-                ><img src="./assets/img/github-sign.png" alt="github"
+                ><img
+                  class="scale-effect"
+                  src="./assets/img/github-sign.png"
+                  alt="github"
               /></a>
               <a
                 href="https://www.linkedin.com/in/wisnu-budi-laksono-72220b12a/"
-                ><img src="./assets/img/linkedin.png" alt="linkedin"
+                ><img
+                  class="scale-effect"
+                  src="./assets/img/linkedin.png"
+                  alt="linkedin"
               /></a>
             </div>
           </div>
         </div>
         <div class="colHero2">
           <div class="flexContainer flexRow">
-            <img class="heroImg" src="./assets/img/hero-img.webp"
+            <img class="heroImg scale-effect" src="./assets/img/hero-img.webp"
             alt="./assets/img/wisnu"" />
             <div class="quote">
-              <h2 class="quoteText">
+              <h2 class="quoteText cursor-scale">
                 " People ignore design that ignore people "
               </h2>
               <div class="rotated">
@@ -107,6 +120,231 @@
           </div>
         </div>
       </div>
-    </main>
+    </section>
+
+    <section id="about" class="main-container">
+      <div id="col1" class="content-col flexColumn">
+        <div class="col-textcontainer">
+          <div class="rotatedText">
+            <p class="scale-effect">About</p>
+          </div>
+          <div class="mainTitle">
+            <h1 class="cursor-scale">Let Me Introduce</h1>
+          </div>
+          <div id="serviceText" class="flexContainer flexRow">
+            <div class="line"></div>
+            <p>
+              My name is Wisnu Budi Laksono, I'm a Web Developer and UI/UX. Now
+              i am studying at Salt Academy for Fullstack Javascript Developer.
+              I have a passion for web development and UI/UX design. I love to
+              play music as well as playing games.
+            </p>
+          </div>
+        </div>
+        <div class="col-btn">
+          <div class="primaryBtn">
+            <a class="scale-effect" href="#">More About Me</a>
+          </div>
+        </div>
+      </div>
+      <div class="content-col flexColumn">
+        <div class="service-card">
+          <div class="service-title">
+            <div class="service-number">
+              <p>01/</p>
+            </div>
+            <div class="service-text">
+              <h2>Web UI/UX Design</h2>
+              <p>My Hobby</p>
+            </div>
+          </div>
+          <div class="icon-arrow">
+            <a class="service-btn scale-effect" href="#"
+              ><span class="fa-solid fa-arrow-up-right-dots"></span
+            ></a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-title">
+            <div class="service-number">
+              <p>02/</p>
+            </div>
+            <div class="service-text">
+              <h2>Mobile App UI/UX Design</h2>
+              <p>My Hobby</p>
+            </div>
+          </div>
+          <div class="icon-arrow">
+            <a class="service-btn scale-effect" href="#"
+              ><span class="fa-solid fa-arrow-up-right-dots"></span
+            ></a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-title">
+            <div class="service-number">
+              <p>03/</p>
+            </div>
+            <div class="service-text">
+              <h2>Music Producer</h2>
+              <p>My Hobby</p>
+            </div>
+          </div>
+          <div class="icon-arrow">
+            <a class="service-btn scale-effect" href="#"
+              ><span class="fa-solid fa-arrow-up-right-dots"></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-container cursor-change">
+      <div id="skills" class="content-col flexColumn">
+        <div class="rotatedText">
+          <p class="scale-effect">Experience</p>
+        </div>
+        <div class="mainTitle">
+          <h1 class="cursor-scale">Skills & Experience</h1>
+        </div>
+        <div class="flexContainer flexRow">
+          <div class="line"></div>
+          <p>
+            A specialist in UI/UX and Web Design with 3 years of experience in
+            the field. I have worked with many clients and companies to create a
+            beautiful and functional website.
+          </p>
+        </div>
+        <div class="skills">
+          <div class="skills-title">
+            <h2>Skills</h2>
+          </div>
+          <div class="skills-detail">
+            <div class="skills-item">
+              <a href=""><span class="fa-solid fa-swatchbook"></span></a>
+              <h3>Design Graphic</h3>
+            </div>
+            <div class="skills-item">
+              <a href=""><span class="fa-brands fa-uikit"></span></a>
+              <h3>UI/UX Design</h3>
+            </div>
+            <div class="skills-item">
+              <a href=""><span class="fa-solid fa-network-wired"></span></a>
+              <h3>Wireframe</h3>
+            </div>
+            <div class="skills-item">
+              <a href=""><span class="fa-solid fa-gears"></span></a>
+              <h3>Prototype</h3>
+            </div>
+            <div class="skills-item">
+              <a href=""><span class="fa-solid fa-user"></span></a>
+              <h3>User Research</h3>
+            </div>
+            <div class="skills-item">
+              <a href=""><span class="fa-solid fa-music"></span></a>
+              <h3>Music Production</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="exp-section">
+        <div class="exp-container">
+          <div class="exp-main">
+            <h2>Experience</h2>
+          </div>
+          <div class="experience-card">
+            <div class="exp-date">
+              <p>2019 - present</p>
+            </div>
+            <div class="exp-title">
+              <h3>UI/UX Designer</h3>
+              <p>Amazon Inc</p>
+            </div>
+          </div>
+          <div class="experience-card">
+            <div class="exp-date">
+              <p>2019 - present</p>
+            </div>
+            <div class="exp-title">
+              <h3>UI/UX Designer</h3>
+              <p>Amazon Inc</p>
+            </div>
+          </div>
+          <div class="experience-card">
+            <div class="exp-date">
+              <p>2019 - present</p>
+            </div>
+            <div class="exp-title">
+              <h3>UI/UX Designer</h3>
+              <p>Amazon Inc</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="contact-information">
+        <div class="contact-col">
+          <div class="contact-title">
+            <div class="rotatedText">
+              <p class="scale-effect">Contact</p>
+            </div>
+            <div class="mainTitle">
+              <h1 class="cursor-scale">Let's Discuss Your Project</h1>
+            </div>
+          </div>
+          <div class="information">
+            <a class="message-icon" href=""
+              ><span class="fa-solid fa-envelope-open-text"></span
+            ></a>
+            <div class="detail">
+              <p>Email</p>
+              <h3>wisnubl1995@gmail.com</h3>
+            </div>
+          </div>
+          <div class="information">
+            <a class="message-icon" href=""
+              ><span class="fa-solid fa-location-crosshairs"></span
+            ></a>
+            <div class="detail">
+              <p>Location</p>
+              <h3>Jakarta Selatan, DKI Jakarta, Indonesia</h3>
+            </div>
+          </div>
+        </div>
+        <div class="contact-col2">
+          <div class="circle">
+            <div class="link">
+              <a href="">Chat Me Directly Now!</a>
+            </div>
+            <div class="button-contact">
+              <a href="">
+                <span class="fa-solid fa-hand-point-right"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-footer">
+        <div class="copyright">
+          <h4>&copy 2022 All Right Reserved</h4>
+        </div>
+        <div class="designed">
+          <h4>
+            Design Inspired By<a
+              href="https://www.behance.net/gallery/132948391/Personal-Portfolio-Web-Landing-Page-Design?tracking_source=search_projects%7Cwebsite+resume"
+              >Tanim Khan</a
+            >
+          </h4>
+        </div>
+        <div class="my-email">
+          <h4>wisnubl1995@gmail.com</h4>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="./assets/main.js"></script>
   </body>
 </html>
