@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+  }
+  .primary-btn {
+    background-color: #fe8c12;
+    border: none;
+    border-radius: 2px;
+  }
+  .cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    border: 2px solid #fe8c12;
+    transition: transform 0.2s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 100;
+  }
+  .grow {
+    transform: scale(5);
+  }
+  .change {
+    border: 2px solid #ffffff;
+  }
+}
+
+@layer base {
+  h9 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
