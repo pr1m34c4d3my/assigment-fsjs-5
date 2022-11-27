@@ -1,3 +1,5 @@
+const menuBtn = document.querySelector(".hamburger");
+const mobile_menu = document.querySelector(".mobile-nav");
 let cursor = document.querySelector(".cursor");
 let cursorScale = document.querySelectorAll(".cursor-scale");
 let cursorChange = document.querySelectorAll(".cursor-change");
@@ -40,10 +42,7 @@ cursorChange.forEach((link) => {
   });
 });
 
-const text = document.querySelector(".text p");
-text.innerHTML = text.innerText
-  .split("")
-  .map(
-    (char, i) => `<span style="transform:rotate(${i * 8.3} deg)">${char}</span>`
-  )
-  .join("");
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("is-active");
+  mobile_menu.classList.toggle("is-active");
+});

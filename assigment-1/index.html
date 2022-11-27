@@ -23,11 +23,12 @@
   <body>
     <div class="cursor"></div>
     <header id="top" class="main-header cursor-change">
-      <div class="mainLogo">
-        <h1>WB</h1>
-        <p>Wisnu Budi Laksono</p>
+      <div class="main-logo">
+        <a href="./index.html">
+          <img src="./assets/img/logo.png" alt="logo" />
+        </a>
       </div>
-      <nav class="mainMenu">
+      <nav class="main-menu">
         <ul class="menuWrapper">
           <li class="menuItem"><a href="./index.html">Home</a></li>
           <li class="menuItem"><a href="#about">About Me</a></li>
@@ -35,6 +36,9 @@
           <li class="menuItem"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
       <div class="searchBox">
         <form
           class="search"
@@ -49,14 +53,22 @@
         </form>
       </div>
     </header>
+    <nav class="mobile-container">
+      <ul class="mobile-nav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="./posts.html">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-    <section id="hero" class="main-container cursor-change">
+    <main id="hero" class="main-container cursor-change">
       <div class="hero-container">
-        <div class="colHero1">
+        <div class="col-hero1">
           <div class="rotatedText">
             <p class="scale-effect">Hello!</p>
           </div>
-          <div class="mainTitle">
+          <div class="main-title">
             <h1 class="cursor-scale">Consult Design and Develop</h1>
           </div>
           <div class="flexContainer flexRow">
@@ -74,25 +86,36 @@
           <div class="social">
             <p>Check Out My</p>
             <div class="socialMedia">
-              <a href="https://www.facebook.com/wisnu.networkproblem/"
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://www.facebook.com/wisnu.networkproblem/"
                 ><img
                   class="scale-effect"
                   src="./assets/img/facebook.png"
                   alt="fb"
               /></a>
-              <a href="https://www.instagram.com/w.psychonaut/"
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://www.instagram.com/w.psychonaut/"
                 ><img
                   class="scale-effect"
                   src="./assets/img/instagram.png"
                   alt="ig"
               /></a>
-              <a href="https://github.com/pr1m34c4d3my/"
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://github.com/pr1m34c4d3my/"
                 ><img
                   class="scale-effect"
                   src="./assets/img/github-sign.png"
                   alt="github"
               /></a>
               <a
+                rel="noopener noreferrer"
+                target="_blank"
                 href="https://www.linkedin.com/in/wisnu-budi-laksono-72220b12a/"
                 ><img
                   class="scale-effect"
@@ -102,7 +125,7 @@
             </div>
           </div>
         </div>
-        <div class="colHero2">
+        <div class="col-hero2">
           <div class="flexContainer flexRow">
             <img class="heroImg scale-effect" src="./assets/img/hero-img.webp"
             alt="./assets/img/wisnu"" />
@@ -120,7 +143,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </main>
 
     <section id="about" class="main-container">
       <div id="col1" class="content-col flexColumn">
@@ -128,11 +151,10 @@
           <div class="rotatedText">
             <p class="scale-effect">About</p>
           </div>
-          <div class="mainTitle">
+          <div class="main-title">
             <h1 class="cursor-scale">Let Me Introduce</h1>
           </div>
           <div id="serviceText" class="flexContainer flexRow">
-            <div class="line"></div>
             <p>
               My name is Wisnu Budi Laksono, I'm a Web Developer and UI/UX. Now
               i am studying at Salt Academy for Fullstack Javascript Developer.
@@ -154,12 +176,12 @@
               <p>01/</p>
             </div>
             <div class="service-text">
-              <h2>Web UI/UX Design</h2>
+              <h2>Cooking Any Dishes</h2>
               <p>My Hobby</p>
             </div>
           </div>
           <div class="icon-arrow">
-            <a class="service-btn scale-effect" href="#"
+            <a class="service-btn scale-effect cursor-change" href="#"
               ><span class="fa-solid fa-arrow-up-right-dots"></span
             ></a>
           </div>
@@ -170,12 +192,12 @@
               <p>02/</p>
             </div>
             <div class="service-text">
-              <h2>Mobile App UI/UX Design</h2>
+              <h2>Playing All Music Stuff</h2>
               <p>My Hobby</p>
             </div>
           </div>
           <div class="icon-arrow">
-            <a class="service-btn scale-effect" href="#"
+            <a class="service-btn scale-effect cursor-change" href="#"
               ><span class="fa-solid fa-arrow-up-right-dots"></span
             ></a>
           </div>
@@ -186,12 +208,12 @@
               <p>03/</p>
             </div>
             <div class="service-text">
-              <h2>Music Producer</h2>
+              <h2>Coding Any Stuff</h2>
               <p>My Hobby</p>
             </div>
           </div>
           <div class="icon-arrow">
-            <a class="service-btn scale-effect" href="#"
+            <a class="service-btn scale-effect cursor-change" href="#"
               ><span class="fa-solid fa-arrow-up-right-dots"></span
             ></a>
           </div>
@@ -204,7 +226,7 @@
         <div class="rotatedText">
           <p class="scale-effect">Experience</p>
         </div>
-        <div class="mainTitle">
+        <div class="main-title">
           <h1 class="cursor-scale">Skills & Experience</h1>
         </div>
         <div class="flexContainer flexRow">
@@ -254,29 +276,29 @@
           </div>
           <div class="experience-card">
             <div class="exp-date">
-              <p>2019 - present</p>
+              <p>2019 - 2022</p>
             </div>
             <div class="exp-title">
-              <h3>UI/UX Designer</h3>
+              <h3>Fullstack Developer</h3>
               <p>Amazon Inc</p>
             </div>
           </div>
           <div class="experience-card">
             <div class="exp-date">
-              <p>2019 - present</p>
+              <p>2017 - 2019</p>
             </div>
             <div class="exp-title">
               <h3>UI/UX Designer</h3>
-              <p>Amazon Inc</p>
+              <p>Netflix Inc</p>
             </div>
           </div>
           <div class="experience-card">
             <div class="exp-date">
-              <p>2019 - present</p>
+              <p>2015 - 2017</p>
             </div>
             <div class="exp-title">
-              <h3>UI/UX Designer</h3>
-              <p>Amazon Inc</p>
+              <h3>Graphic Designer</h3>
+              <p>Facebook Inc</p>
             </div>
           </div>
         </div>
@@ -290,7 +312,7 @@
             <div class="rotatedText">
               <p class="scale-effect">Contact</p>
             </div>
-            <div class="mainTitle">
+            <div class="main-title">
               <h1 class="cursor-scale">Let's Discuss Your Project</h1>
             </div>
           </div>
@@ -319,7 +341,12 @@
               <a href="">Chat Me Directly Now!</a>
             </div>
             <div class="button-contact">
-              <a href="">
+              <a
+                class="cursor-change scale-effect"
+                href="https://wa.me/6282122920950"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span class="fa-solid fa-hand-point-right"></span>
               </a>
             </div>
