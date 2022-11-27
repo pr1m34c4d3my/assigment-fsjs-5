@@ -12,3 +12,5 @@ You don have to install NPM or something else because it's pure HTML & CSS
 
 [FontAwesome](https://fontawesome.com/)
 [GSAP](https://greensock.com/gsap/)
+[Tanim Khan](https://www.behance.net/gallery/132948391/Personal-Portfolio-Web-Landing-Page-Design?tracking_source=search_projects%7Cwebsite+resume)
+[Fender](https://www.fender.com/en/start)
