@@ -4,7 +4,7 @@
   "description": "coba tailwind",
   "main": "index.js",
   "scripts": {
-    "start": "npx tailwindcss -i ./tailwind.css -o ./app.css --watch",
+    "dev": "npx tailwindcss -i ./tailwind.css -o ./app.css --watch",
     "prod": "npx tailwindcss -i ./tailwind.css -o ./app.css --minify"
   },
   "author": "wisnu",

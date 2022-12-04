@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Assigment 2 | Wisnu Budi Laksono</title>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width,minimum-scale=1,initial-scale=1"
     />
     <meta author="Wisnu Budi Laksono" />
+    <meta description="Assigment 2 - Slicing UI FSJS-5 | Wisnu Budi Laksono" />
+    <title>Bioven</title>
+    <link rel="icon" href="./favicon.ico" type="icon" />
     <link rel="stylesheet" href="../app.css" />
     <script
       src="https://kit.fontawesome.com/6ae0fc221d.js"
@@ -15,55 +17,96 @@
     ></script>
   </head>
   <body>
-    <header>
-      <div class="cursor"></div>
-      <div
-        class="flex flex-row justify-between items-center bg-white px-[375px] py-[20px]"
-      >
-        <div>
-          <figure>
-            <a href="/src/index.html">
-              <img src="./assets/Logo.svg" alt="logo" />
-            </a>
-            <figcaption class="screen-reader-text">Bioven</figcaption>
-          </figure>
-        </div>
-        <div class="flex flex-row items-center gap-[40px]">
-          <div class="flex flex-row gap-[15px]">
-            <img src="./assets/icons/phone.svg" alt="phone" />
-            <div class="flex flex-col">
-              <p
-                class="font-bold text-[#686C73] text-[10px] leading-[20px] uppercase"
-              >
-                tell with us
-              </p>
-              <a href="">
-                <h9>+123 -568 - 4758</h9>
-              </a>
-            </div>
-          </div>
-          <div class="bg-[#E6E7E8] w-[1px] h-[40px]"></div>
-          <div class="flex flex-row gap-[15px]">
-            <img src="./assets/icons/mail.svg" alt="mail" />
-            <div class="flex flex-col">
-              <p
-                class="font-bold text-[#686C73] text-[10px] leading-[20px] uppercase"
-              >
-                tell with us
-              </p>
-              <a href="">
-                <h9>+123 -568 - 4758</h9>
-              </a>
-            </div>
-          </div>
-          <a
-            href="#"
-            class="primary-btn cursor-change py-[16px] px-[39px] uppercase text-[16px] font-bold text-white"
-            >read more <span class="fa-solid fa-arrow-right pl-[15px]"></span
-          ></a>
-        </div>
+    <div class="cursor hidden lg:block"></div>
+
+    <header
+      class="w-full h-[100px] pl-2 lg:px-[375px] items-center flex justify-between"
+    >
+      <div class="z-[999]">
+        <figure>
+          <a href="/src/index.html">
+            <img src="./assets/Logo.svg" alt="logo" />
+          </a>
+          <figcaption class="screen-reader-text">Bioven</figcaption>
+        </figure>
       </div>
+      <div class="hidden lg:flex flex-row items-center gap-[40px]">
+        <div class="flex flex-row gap-[15px]">
+          <img src="./assets/icons/phone.svg" alt="phone" />
+          <ul class="flex flex-col">
+            <li
+              class="font-bold text-[#686C73] text-[10px] leading-[20px] uppercase"
+            >
+              tell with us
+            </li>
+            <li href="">
+              <a href=""><h9>+62 821-2292-0950</h9></a>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-[#E6E7E8] w-[1px] h-[40px]"></div>
+        <div class="flex flex-row gap-[15px]">
+          <img src="./assets/icons/mail.svg" alt="mail" />
+          <ul class="flex flex-col">
+            <li
+              class="font-bold text-[#686C73] text-[10px] leading-[20px] uppercase"
+            >
+              tell with us
+            </li>
+            <li href="">
+              <a href=""><h9>support@bioven.com</h9></a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="primary-btn cursor-change"
+          >read more <span class="fa-solid fa-arrow-right pl-[15px]"></span
+        ></a>
+      </div>
+      <button class="hamburger lg:hidden">
+        <div class="bar"></div>
+      </button>
     </header>
+
+    <nav class="mobile-container">
+      <ul class="mobile-nav">
+        <li><a href="#">Home+</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Pages+</a></li>
+        <li><a href="#">News+</a></li>
+        <li><a href="#">Contact Us</a></li>
+
+        <ul class="flex flex-row items-center justify-center gap-[10px]">
+          <li>
+            <a href="#">
+              <span
+                class="fa-brands fa-facebook-f text-white px-[14px] py-[10px] bg-[#353B44] rounded-full hover:bg-primary transition-all"
+              ></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span
+                class="fa-brands fa-twitter text-white px-[10px] py-[10px] bg-[#353B44] rounded-full hover:bg-primary transition-all"
+              ></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span
+                class="fa-brands fa-linkedin-in text-white px-[10px] py-[10px] bg-[#353B44] rounded-full hover:bg-primary transition-all"
+              ></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span
+                class="fa-brands fa-instagram text-white px-[10px] py-[10px] bg-[#353B44] rounded-full hover:bg-primary transition-all"
+              ></span>
+            </a>
+          </li>
+        </ul>
+      </ul>
+    </nav>
 
     <section
       class="relative flex w-full flex-col h-[863px] bg-[#030a15a6] overflow-hidden"
@@ -73,13 +116,12 @@
       >
         <img
           class="object-cover"
-          src="./assets/slide3.jpg"
+          src="./assets/background.jpg"
           id="lastClone"
           alt=""
         />
         <img class="object-cover" src="./assets/hero.jpg" alt="" />
         <img class="object-cover" src="./assets/background.jpg" alt="" />
-        <img class="object-cover" src="./assets/slide3.jpg" alt="" />
         <img
           class="object-cover"
           src="./assets/hero.jpg"
@@ -91,7 +133,7 @@
 
     <section class="relative -mt-[863px] flex w-full flex-col h-[863px]">
       <div
-        class="flex flex-row justify-between items-center bg-black mx-[375px] py-[12px]"
+        class="hidden lg:flex flex-row justify-between items-center bg-black lg:mx-[375px] py-[12px]"
       >
         <nav>
           <ul class="flex flex-row ml-[30px] gap-8">
@@ -139,61 +181,71 @@
             ></span>
           </div>
           <div class="bg-[#353B44] w-[1px] h-[30px] mr-[20px]"></div>
-          <div class="flex flex-row gap-[10px]">
-            <a href="#"
-              ><span
-                class="fa-brands fa-facebook-f text-white px-[14px] py-[10px] bg-[#353B44] rounded-full hover:bg-primary transition-all"
-              ></span
-            ></a>
-            <a href="#"
-              ><span
-                class="fa-brands fa-twitter text-white px-[10px] py-[10px] bg-[#353B44] rounded-full hover:bg-primary transition-all"
-              ></span
-            ></a>
-            <a href="#"
-              ><span
-                class="fa-brands fa-linkedin-in text-white px-[10px] py-[10px] bg-[#353B44] rounded-full hover:bg-primary transition-all"
-              ></span
-            ></a>
-            <a href="#"
-              ><span
-                class="fa-brands fa-instagram text-white px-[10px] py-[10px] bg-[#353B44] rounded-full hover:bg-primary transition-all"
-              ></span
-            ></a>
-          </div>
+          <ul class="flex flex-row gap-[10px]">
+            <li>
+              <a href="#">
+                <span
+                  class="fa-brands fa-facebook-f text-white px-[14px] py-[10px] bg-[#353B44] rounded-full hover:bg-primary transition-all"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span
+                  class="fa-brands fa-twitter text-white px-[10px] py-[10px] bg-[#353B44] rounded-full hover:bg-primary transition-all"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span
+                  class="fa-brands fa-linkedin-in text-white px-[10px] py-[10px] bg-[#353B44] rounded-full hover:bg-primary transition-all"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span
+                  class="fa-brands fa-instagram text-white px-[10px] py-[10px] bg-[#353B44] rounded-full hover:bg-primary transition-all"
+                ></span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="w-full h-full flex flex-row items-center justify-center">
-        <div class="w-8/12 flex ml-[375px] flex-col">
-          <h9 class="text-primary font-bold text-[16px] uppercase"
+      <div
+        class="w-full h-full flex flex-col items-center justify-between lg:flex-row lg:justify-center"
+      >
+        <div
+          class="container w-full flex flex-col items-center lg:items-start lg:ml-[375px] lg:w-8/12"
+        >
+          <h9 class="text-primary mt-10 font-bold text-[16px] uppercase"
             >We're the best</h9
           >
           <h1
-            class="text-white font-extrabold text-[90px] leading-[110px] w-8/12 cursor-pointer cursor-scale"
+            class="text-white uppercase font-extrabold text-center text-[70px] leading-normal lg:text-left lg:text-[90px] lg:leading-[110px] lg:w-10/12 cursor-pointer cursor-scale"
           >
             Provide Export Advice
           </h1>
           <p
-            class="text-white font-normal text-[24px] leading-[34px] mt-[30px] w-8/12"
+            class="text-white font-normal text-center text-[16px] leading-normal lg:text-[24px] lg:text-left lg:leading-[34px] mt-[30px] lg:w-8/12"
           >
             Pellentesque convallis posuere leo faucibus mollis. Sed a laoreet
             augue. Etiam pretium sagittis tellus vitae consectetur.
           </p>
           <div class="flex flex-row items-center gap-[20px] mt-[47px]">
-            <a
-              class="text-white cursor-change primary-btn gap-[15px] w-[207px] h-[60px] items-center justify-center flex uppercase text-[16px] leading-[28px] font-bold"
-              href="#"
-              >quote now<span class="fa-solid fa-arrow-right"></span
+            <a class="primary-btn" href="#"
+              >quote now<span class="fa-solid fa-arrow-right pl-[15px]"></span
             ></a>
             <a
               class="text-black bg-white w-[60px] h-[60px] flex items-center justify-center rounded-full"
               href="#"
-              ><i class="fa-solid fa-play"></i
+              ><span class="fa-solid fa-play"></span
             ></a>
           </div>
         </div>
         <div
-          class="w-4/12 h-full flex items-end justify-end gap-[10px] pr-[100px]"
+          class="w-4/12 h-full flex items-end justify-end gap-[10px] lg:pr-[100px]"
         >
           <button
             class="cursor-change mb-[100px] w-[55px] h-[55px] rounded-full border-2 border-primary flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
@@ -210,6 +262,619 @@
         </div>
       </div>
     </section>
+
+    <section
+      class="w-full flex flex-col relative justify-center bg-[#f5f5f5] lg:flex-row lg:h-[813px] md:flex-row overflow-hidden"
+    >
+      <div class="lg:w-6/12 relative m-1 lg:ml-64 lg:mt-28 md:ml-20">
+        <figure
+          class="w-[300px] h-[300px] top-14 rounded-full overflow-hidden absolute lg:w-[470px] lg:h-[470px]"
+        >
+          <img
+            class="object-cover right-16 absolute hover:scale-125 transition-all"
+            src="./assets/inge.jpg"
+            alt=""
+          />
+        </figure>
+        <figure
+          class="bg-slate-400 w-[220px] h-[220px] top-8 left-36 border-solid border-[10px] border-white rounded-full overflow-hidden absolute lg:w-[370px] lg:h-[370px] lg:left-56 lg:top-4 lg:border-[20px]"
+        >
+          <img
+            class="absolute -top-8 hover:scale-125 transition-all"
+            src="./assets/bias.jpg"
+            alt=""
+          />
+        </figure>
+        <div
+          class="absolute bg-transparent border-solid border-[1px] border-primary rounded-full top-48 left-52 w-[140px] h-[140px] flex flex-col justify-center items-center lg:w-[230px] lg:h-[230px] lg:top-72 lg:left-[300px]"
+        ></div>
+        <div
+          class="absolute bg-primary hover:bg-white text-white hover:text-primary transition-all rounded-full top-56 left-48 w-[140px] h-[140px] flex flex-col justify-center items-center lg:w-[230px] lg:h-[230px] lg:top-80 lg:left-72"
+        >
+          <h2 class="font-extrabold text-[24px] text-center lg:text-[48px]">
+            22+
+          </h2>
+          <h9
+            class="font-bold text-[12px] text-center leading-none lg:text-[16px]"
+            >Year Have Our <br />
+            Experience</h9
+          >
+        </div>
+      </div>
+
+      <div
+        class="lg:w-6/12 flex flex-col justify-center items-center text-center mt-[400px] lg:mt-0 lg:text-left lg:items-start lg:mr-96 md:text-left md:mr-0 md:items-start"
+      >
+        <div class="flex flex-row items-center gap-[10px]">
+          <div class="w-[60px] h-[2px] bg-primary"></div>
+          <p class="uppercase text-primary font-medium text-[18px]">
+            How to grow business
+          </p>
+        </div>
+        <div class="flex flex-col gap-[30px]">
+          <h2 class="font-extrabold text-[48px] leading-[62px] uppercase">
+            increase your business & maintain
+          </h2>
+          <p class="font-normal text-[16px] leading-[26px]">
+            Praesent pretium condimentum dolor, quis sollicitudin ligula viverra
+            et. Duis vitae tincidunt sapien, ut blandit nunc. Suspendisse
+            vestibulum, ipsum vel ullamcorper porta, ipsum felis accumsan odio,
+            nec suscipit diam lacus nec libero.
+          </p>
+        </div>
+        <ul class="flex flex-col m-4 gap-7 lg:flex-row lg:m-0 lg:mt-[30px]">
+          <li class="flex items-center gap-4">
+            <figure
+              class="py-[15px] px-[15px] rounded-full bg-white flex items-center justify-center"
+            >
+              <img src="./assets/icons/support.svg" alt="" />
+            </figure>
+            <div class="flex-col text-left">
+              <h8 class="font-extrabold text-[18px] leading-[28px] uppercase"
+                >Get consulting</h8
+              >
+              <p class="font-normal text-[16px] leading-[26px]">
+                Praesent id massa suscipit, venenatis velit in,
+              </p>
+            </div>
+          </li>
+          <li class="flex items-center gap-4">
+            <figure
+              class="py-[15px] px-[15px] rounded-full bg-white flex items-center justify-center"
+            >
+              <img src="./assets/icons/support.svg" alt="" />
+            </figure>
+            <div class="flex-col text-left">
+              <h8 class="font-extrabold text-[18px] leading-[28px] uppercase"
+                >Business Strategy</h8
+              >
+              <p class="font-normal text-[16px] leading-[26px]">
+                Praesent id massa suscipit, venenatis velit in,
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div
+          class="w-[370px] h-[1px] bg-[#E6E7E8] lg:w-[570px] lg:mt-[40px]"
+        ></div>
+        <div
+          class="mt-5 flex flex-col lg:flex-row items-center md:flex-row lg:gap-[30px]"
+        >
+          <a
+            href="#"
+            class="bg-primary cursor-change py-[16px] px-[39px] rounded-[2px] uppercase text-[16px] font-bold text-white hover:bg-white hover:text-primary transition-all"
+            >read more <span class="fa-solid fa-arrow-right pl-[15px]"></span
+          ></a>
+          <div class="flex flex-col m-4 gap-7">
+            <div class="flex items-center gap-4">
+              <figure
+                class="w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center overflow-hidden"
+              >
+                <img src="./assets/wis.jpg" alt="" />
+              </figure>
+              <div class="flex-col text-left">
+                <h10 class="font-bold text-[14px] leading-[24px] uppercase"
+                  >Wisnu Budi Laksono</h10
+                >
+                <p class="font-normal text-[16px] leading-[26px]">
+                  Founder, CEO
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-white w-[800px] h-[800px] hidden rounded-full lg:block absolute opacity-[30%] left-[1378px] top-[411px]"
+      ></div>
+    </section>
+
+    <section
+      class="flex flex-col relative lg:flex-row lg:justify-between lg:px-[375px] items-center overflow-hidden bg-parallax bg-[#0a0a0bb9] bg-blend-overlay bg-no-repeat bg-fixed bg-center bg-cover w-full h-[648px]"
+    >
+      <div
+        class="bg-white relative flex flex-col mt-24 px-[50px] gap-[50px] items-center text-center justify-center lg:mt-0 lg:w-[654px] h-[408px] lg:items-start lg:text-left"
+      >
+        <h2
+          class="font-extrabold text-[30px] lg:text-[48px] lg:leading-[62px] uppercase"
+        >
+          We are committed to sustainable & inclusive growth
+        </h2>
+        <a href="#" class="primary-btn cursor-change"
+          >read more <span class="fa-solid fa-arrow-right pl-[15px]"></span
+        ></a>
+        <div class="absolute bottom-0 right-0">
+          <img src="./assets/icons/transparent.svg" alt="" />
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center pb-8 lg:gap-[40px] lg:pb-0"
+      >
+        <p class="text-white text-[30px]">Watch Video</p>
+        <a
+          class="text-black bg-white p-[40px] flex items-center justify-center rounded-full"
+          href="#"
+          ><span class="fa-solid fa-play"></span
+        ></a>
+      </div>
+      <div class="hidden lg:block absolute bottom-0 right-28">
+        <img src="./assets/splash.png" alt="" />
+      </div>
+    </section>
+
+    <section
+      class="h-full flex flex-col items-center justify-center lg:items-start lg:px-[200px] pb-[100px]"
+    >
+      <div class="flex flex-row items-center gap-[10px] mt-[40px]">
+        <div class="w-[60px] h-[2px] bg-primary"></div>
+        <p class="uppercase text-primary font-medium text-[20px]">Portfolio</p>
+      </div>
+
+      <div class="text-center lg:text-left">
+        <h2
+          class="uppercase font-extrabold text-[48px] leading-[62px] mt-[10px] mb-[60px]"
+        >
+          recent case study
+        </h2>
+      </div>
+
+      <div
+        id="carousel"
+        class="relative flex flex-col lg:flex-row lg:justify-center items-center gap-5 w-full lg:gap-[30px] overflow-hidden cursor-pointer"
+      >
+        <div
+          class="w-[70%] h-[300px] lg:w-[370px] lg:h-[470px] bg-slate-500 bg-cover bg-center bg-no-repeat overflow-hidden relative"
+        >
+          <img
+            class="object-cover w-[300px] lg:w-[400px] max-w-none absolute -top-8 right-0 hover:scale-125 transition-all"
+            src="./assets/kirana.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="w-[70%] h-[300px] lg:w-[370px] lg:h-[470px] bg-slate-500 bg-cover bg-no-repeat bg-center overflow-hidden relative"
+        >
+          <img
+            class="object-cover w-[400px] lg:w-[500px] max-w-none absolute -top-14 lg:-top-20 -left-16 hover:scale-125 transition-all"
+            src="./assets/lila.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="w-[70%] h-[300px] lg:w-[370px] lg:h-[470px] bg-slate-500 bg-cover bg-no-repeat bg-center overflow-hidden relative"
+        >
+          <img
+            class="object-cover w-[350px] lg:w-[500px] max-w-none absolute -left-8 lg:-left-14 hover:scale-125 transition-all"
+            src="./assets/shanika.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="w-[70%] h-[300px] lg:w-[370px] lg:h-[470px] bg-slate-500 bg-cover bg-no-repeat bg-center overflow-hidden relative"
+        >
+          <img
+            class="object-cover w-[800px] max-w-none absolute -top-16 -left-60 lg:-left-48 hover:scale-125 transition-all"
+            src="./assets/rieger.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--  <div
+      class="w-[370px] h-[470px] bg-[#0a0a0baf] flex flex-col justify-between relative p-[50px] -left-96 hover:left-0"
+    >
+      <div class="">
+        <a class="bg-white px-[16px] py-[13px] ml-[250px] rounded-full" href="#"
+          ><span class="fa-solid fa-maximize"></span
+        ></a>
+      </div>
+      <div>
+        <h5 class="font-extrabold text-[24px] text-white">Business Planing</h5>
+        <p class="font-bold text-[14px] text-primary">Strategy Management</p>
+      </div>
+    </div>-->
+
+    <section class="flex flex-col w-full h-full lg:h-[754px] lg:flex-row">
+      <div
+        class="flex relative flex-col w-full bg-[#0A0A0B] p-5 items-center justify-center lg:items-start lg:w-[1253px] lg:pl-[375px] lg:pr-[365px]"
+      >
+        <div class="flex flex-row items-center gap-[10px] mt-[40px]">
+          <div class="w-[60px] h-[2px] bg-primary"></div>
+          <p class="uppercase text-primary font-medium text-[18px]">
+            Provides advice
+          </p>
+        </div>
+        <div class="flex flex-col gap-[30px]">
+          <h2
+            class="font-extrabold text-[48px] leading-[62px] uppercase text-white text-center lg:text-left"
+          >
+            The Productized Consulting Model
+          </h2>
+          <p
+            class="font-normal text-[16px] leading-[26px] text-white text-center lg:text-left"
+          >
+            Praesent id massa suscipit, venenatis velit in, ultrices sapien.
+            Phasellus molestie, ex vel dictum efficitur, felis erat pharetra
+            metus, ut aliquet nulla nulla ac nibh
+          </p>
+        </div>
+        <ul class="flex flex-col m-4 gap-7 lg:m-0 mt-[30px] lg:mt-[40px]">
+          <li class="flex items-center gap-[30px]">
+            <figure
+              class="py-[15px] px-[15px] rounded-full bg-white hover:bg-slate-700 transition-all flex items-center justify-center"
+            >
+              <img src="./assets/icons/support.svg" alt="" />
+            </figure>
+            <div class="flex-col text-left w-[205px]">
+              <h7
+                class="font-extrabold text-[20px] leading-[30px] uppercase text-white"
+                >Solving a client’s problems.</h7
+              >
+            </div>
+          </li>
+          <li class="flex items-center gap-[30px]">
+            <figure
+              class="py-[15px] px-[15px] rounded-full bg-white hover:bg-slate-700 transition-all flex items-center justify-center"
+            >
+              <img src="./assets/icons/support.svg" alt="" />
+            </figure>
+            <div class="flex-col text-left w-[205px]">
+              <h7
+                class="font-extrabold text-[20px] leading-[30px] uppercase text-white"
+                >Recommending Actions</h7
+              >
+            </div>
+          </li>
+        </ul>
+        <div class="hidden absolute bottom-0 left-0 lg:block">
+          <img src="./assets/splash2.png" alt="" />
+        </div>
+      </div>
+      <div
+        class="w-[668px] h-full lg:h-full bg-[url('./src/assets/beach.jpg')] bg-cover bg-[#494949] bg-blend-overlay"
+      ></div>
+    </section>
+
+    <section
+      class="w-full h-full lg:h-[700px] bg-testi flex flex-row items-center justify-center p-2 lg:px-[375px] pb-10 lg:pb-0"
+    >
+      <div class="flex flex-col items-center gap-[70px] lg:flex-row">
+        <div class="relative">
+          <figure
+            class="w-[350px] h-[350px] rounded-full overflow-hidden relative"
+          >
+            <img
+              class="object-cover max-w-none w-[400px] absolute -left-10"
+              src="./assets/monica.jpg"
+              alt=""
+            />
+          </figure>
+          <div
+            class="w-[80px] h-[80px] rounded-full flex items-center justify-center border-primary border-solid border-[1px] absolute top-0 right-3 lg:-top-3 lg:-right-2"
+          ></div>
+          <div
+            class="w-[80px] h-[80px] rounded-full flex items-center justify-center bg-primary absolute top-5 right-5 lg:top-0 lg:right-0"
+          >
+            <img src="./assets/icons/quote.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="flex flex-col-reverse lg:flex-col justify-between gap-5 h-[290px]"
+        >
+          <p
+            class="font-medium text-[20px] text-center lg:text-left lg:text-[30px] leading-normal lg:leading-[40px]"
+          >
+            Praesent id massa suscipit, venenatis velit in, ultrices sapien.
+            Phasellus molestie, ex vel dictum efficitur, felis erat pharetra
+            metus, ut aliquet nulla nulla ac nibh. Aenean hendrerit lobortis
+          </p>
+          <div
+            class="flex flex-col-reverse gap-5 lg:flex-row justify-between items-center"
+          >
+            <div class="flex flex-col items-center lg:items-start">
+              <h6 class="font-extrabold text-[22px] leading-[32px] uppercase">
+                michele morrone
+              </h6>
+              <p
+                class="font-bold text-[16px] leading-[26px] uppercase text-primary"
+              >
+                Senior Model
+              </p>
+            </div>
+            <div class="flex flex-row gap-[10px]">
+              <div
+                class="w-[30px] h-[30px] cursor-pointer border-white hover:border-primary transition-all border-[1px] border-solid rounded-full flex items-center justify-center"
+              >
+                <div class="w-[10px] h-[10px] bg-primary rounded-full"></div>
+              </div>
+              <div
+                class="w-[30px] h-[30px] cursor-pointer border-white hover:border-primary transition-all border-[1px] border-solid rounded-full flex items-center justify-center"
+              >
+                <div class="w-[10px] h-[10px] bg-primary rounded-full"></div>
+              </div>
+              <div
+                class="w-[30px] h-[30px] cursor-pointer border-white hover:border-primary transition-all border-[1px] border-solid rounded-full flex items-center justify-center"
+              >
+                <div class="w-[10px] h-[10px] bg-primary rounded-full"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--<section class="flex flex-col h-full w-full">
+      <div class="flex flex-row items-center justify-center">
+        <div class="flex-col">
+          <div class="flex flex-row items-center gap-[10px] mt-[40px]">
+            <div class="w-[60px] h-[2px] bg-primary"></div>
+            <p class="uppercase text-primary font-medium text-[18px]">Faq</p>
+          </div>
+          <div class="flex flex-col gap-[30px]">
+            <h2
+              class="font-extrabold text-[48px] leading-[62px] uppercase text-black text-center lg:text-left"
+            >
+              Have any questions?
+            </h2>
+          </div>
+          <div class="flex flex-col gap-[10px]">
+            <div
+              class="w-[570px] h-[70px] bg-[#F5F5F5] px-5 flex flex-row items-center justify-between"
+            >
+              <div class="flex flex-row items-center gap-2">
+                <img
+                  class="bg-white w-[22px] h-[22px] rounded-full"
+                  src="./assets/icons/faq.svg"
+                  alt=""
+                />
+                <h9 class="text-[16px] font-bold uppercase"
+                  >What does FAQ mean in business?</h9
+                >
+              </div>
+              <div class="flex cursor-pointer">
+                <img src="./assets/icons/plus.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="w-[570px] h-[170px] bg-[#F5F5F5] p-5 flex flex-row items-start justify-between"
+            >
+              <div class="flex flex-row items-start gap-2">
+                <img
+                  class="bg-white w-[22px] h-[22px] rounded-full"
+                  src="./assets/icons/faq.svg"
+                  alt=""
+                />
+                <div class="flex flex-col">
+                  <h9 class="text-[16px] font-bold uppercase"
+                    >What does FAQ mean in business?</h9
+                  >
+                  <p class="text-[16px] leading-[26px] w-[466px]">
+                    Praesent id massa suscipit, venenatis velit in, ultrices
+                    sapien. Phasellus molestie, ex vel dictum efficitur, felis
+                    erat pharetra metus, ut aliquet nulla nulla ac nibh.
+                  </p>
+                </div>
+              </div>
+              <div class="flex cursor-pointer">
+                <img src="./assets/icons/minus.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="w-[570px] h-[70px] bg-[#F5F5F5] px-5 flex flex-row items-center justify-between"
+            >
+              <div class="flex flex-row items-center gap-2">
+                <img
+                  class="bg-white w-[22px] h-[22px] rounded-full"
+                  src="./assets/icons/faq.svg"
+                  alt=""
+                />
+                <h9 class="text-[16px] font-bold uppercase"
+                  >How is your business going answer?</h9
+                >
+              </div>
+              <div class="flex cursor-pointer">
+                <img src="./assets/icons/plus.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="w-[570px] h-[70px] bg-[#F5F5F5] px-5 flex flex-row items-center justify-between"
+            >
+              <div class="flex flex-row items-center gap-2">
+                <img
+                  class="bg-white w-[22px] h-[22px] rounded-full"
+                  src="./assets/icons/faq.svg"
+                  alt=""
+                />
+                <h9 class="text-[16px] font-bold uppercase"
+                  >What are the 4 basic business questions?</h9
+                >
+              </div>
+              <div class="flex cursor-pointer">
+                <img src="./assets/icons/plus.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>Gambar</div>
+      </div>
+      <div></div>
+    </section>-->
+
+    <footer class="flex flex-col">
+      <div
+        class="bg-[#0A0A0B] bg-shape bg-no-repeat bg-blend-normal h-[212px] w-full flex flex-col gap-4 items-center justify-center lg:flex-row lg:justify-between lg:px-[375px]"
+      >
+        <h3
+          class="font-extrabold text-[36px] leading-[46px] text-center text-white"
+        >
+          Contact us for a solution
+        </h3>
+        <a
+          href="#"
+          class="bg-white cursor-change py-[16px] px-[39px] rounded-[2px] uppercase text-[16px] font-bold text-black hover:bg-primary hover:text-white transition-all"
+          >Contact Us <span class="fa-solid fa-arrow-right pl-[15px]"></span
+        ></a>
+      </div>
+      <div class="bg-[#F5F5F5] bg-footer flex flex-col">
+        <div
+          class="flex flex-col p-8 lg:items-start lg:flex-row gap-[30px] lg:px-[375px] lg:mt-[90px] lg:mb-[130px]"
+        >
+          <div
+            class="flex flex-col items-center text-center lg:items-start lg:text-left lg:w-[280px] gap-[20px]"
+          >
+            <img width="163px" src="./assets/Logo.svg" alt="" />
+            <p class="text-[16px] leading-[26px]">
+              Praesent eleifend lobortis vehicula. Nunc a justo facilisis,
+              tristique ipsum non, fringilla massa. Maecenas
+            </p>
+            <ul class="flex flex-row gap-[10px]">
+              <li>
+                <a href="#">
+                  <span
+                    class="fa-brands fa-facebook-f text-black px-[14px] py-[10px] bg-white rounded-full hover:bg-primary transition-all"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span
+                    class="fa-brands fa-twitter text-black px-[10px] py-[10px] bg-white rounded-full hover:bg-primary transition-all"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span
+                    class="fa-brands fa-linkedin-in text-black px-[10px] py-[10px] bg-white rounded-full hover:bg-primary transition-all"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span
+                    class="fa-brands fa-instagram text-black px-[10px] py-[10px] bg-white rounded-full hover:bg-primary transition-all"
+                  ></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="uppercase flex flex-col gap-[30px]">
+            <h7 class="font-extrabold text-[20px]">pages links</h7>
+            <ul class="flex flex-col gap-[20px] flex-wrap w-[220px] h-[180px]">
+              <li><a class="font-medium text-[14px]" href="#">About us</a></li>
+              <li><a class="font-medium text-[14px]" href="#">Services</a></li>
+              <li><a class="font-medium text-[14px]" href="#">Portfolio</a></li>
+              <li>
+                <a class="font-medium text-[14px]" href="#">Testimonials</a>
+              </li>
+              <li><a class="font-medium text-[14px]" href="#">Pages</a></li>
+              <li><a class="font-medium text-[14px]" href="#">FAQ</a></li>
+              <li>
+                <a class="font-medium text-[14px]" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uppercase flex flex-col gap-[30px]">
+            <h7 class="font-extrabold text-[20px]">recent post</h7>
+            <div class="flex flex-row gap-[20px]">
+              <figure class="w-[70px] h-[70px] overflow-hidden">
+                <img class="object-fit" src="./assets/pipahitam.jpg" alt="" />
+              </figure>
+              <div class="flex flex-col">
+                <p class="font-extrabold text-[14px] leading-[24px]">
+                  Their business blog is full
+                </p>
+                <div class="flex flex-row gap-[10px]">
+                  <img src="./assets/icons/calendar.svg" alt="" />
+                  <p class="font-bold text-[12px] text-[#686C73]">
+                    22 Oct, 2021
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#E6E7E8] w-[270px] h-[1px]"></div>
+            <div class="flex flex-row gap-[20px]">
+              <figure class="w-[70px] h-[70px] overflow-hidden">
+                <img class="object-fit" src="./assets/pipahitam.jpg" alt="" />
+              </figure>
+              <div class="flex flex-col">
+                <p class="font-extrabold text-[14px] leading-[24px]">
+                  Their business blog is full
+                </p>
+                <div class="flex flex-row gap-[10px]">
+                  <img src="./assets/icons/calendar.svg" alt="" />
+                  <p class="font-bold text-[12px] text-[#686C73]">
+                    22 Oct, 2021
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-start gap-[30px]">
+            <h7 class="font-extrabold text-[20px] uppercase">Information</h7>
+            <div class="flex flex-row items-center justify-center gap-[20px]">
+              <img src="./assets/icons/tel.svg" alt="" /><h10
+                class="font-bold text-[14px] leading-[24px]"
+                >+62 821-2292-0950</h10
+              >
+            </div>
+            <div class="flex flex-row items-center justify-center gap-[20px]">
+              <img src="./assets/icons/mail-sm.svg" alt="" /><h10
+                class="font-bold text-[14px] leading-[24px]"
+                >infobioven@gmail.com</h10
+              >
+            </div>
+            <div class="flex flex-row items-center justify-center gap-[20px]">
+              <img src="./assets/icons/pin.svg" alt="" /><h10
+                class="font-bold text-[14px] leading-[24px]"
+                >Birkbeck Court, Birkbeck Rd, London W3 6BQ, UK</h10
+              >
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-[1px] bg-[#0a0a0b1e]"></div>
+        <div
+          class="lg:px-[375px] flex flex-col-reverse items-center p-5 gap-5 lg:gap-0 lg:flex-row justify-between lg:py-[30px]"
+        >
+          <h10 class="font-bold text-[14px] uppercase"
+            >© 2021 Bioven. All rights reserved.</h10
+          >
+          <nav>
+            <ul class="flex flex-row uppercase gap-[20px]">
+              <li><a class="font-bold text-[14px]" href="#">Home</a></li>
+              <li><a class="font-bold text-[14px]" href="#">|</a></li>
+              <li><a class="font-bold text-[14px]" href="#">About</a></li>
+              <li><a class="font-bold text-[14px]" href="#">|</a></li>
+              <li><a class="font-bold text-[14px]" href="#">Faqs</a></li>
+              <li><a class="font-bold text-[14px]" href="#">|</a></li>
+              <li><a class="font-bold text-[14px]" href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="./script/main.js"></script>
