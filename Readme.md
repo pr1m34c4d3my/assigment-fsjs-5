@@ -30,10 +30,10 @@ $(document).ready(function () {
 
 Note:
 
-> Don't forget to add [Jquery](https://code.jquery.com/jquery-3.6.2.min.js) from CDN or manually into your code/hmtl
-> This is not included the CSS style of your color, position, and display. You must input the style CSS manually for the floating text
-> I recommend to style the tag ```span``` manually because that will call by default in JS to create a floating text
-> If you are using ```absolute``` position in ```span``` tag, don't forget to add ```relative``` position into the parent of ```span``` tag.
+* > Don't forget to add [Jquery](https://code.jquery.com/jquery-3.6.2.min.js) from CDN or manually into your code/hmtl
+* > This is not included the CSS style of your color, position, and display. You must input the style CSS manually for the floating text
+* > I recommend to style the tag ```span``` manually because that will call by default in JS to create a floating text
+* > If you are using ```absolute``` position in ```span``` tag, don't forget to add ```relative``` position into the parent of ```span``` tag.
 
 ```
 span {
