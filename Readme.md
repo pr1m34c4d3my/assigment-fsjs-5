@@ -14,14 +14,12 @@ yarn add simple-floating-text
 
 2. Clone this repository
 3. Load the `floating-text.js` in your \*.html
-4. Call function with Jquery and add your elements/class/id
+4. Call function with Jquery and add your tags/class/id
 
 ```
 $(document).ready(function () {
-  $("input").floatingText({
-    duration: 1,
-    upperLimit: 200,
-    sizeInterval: [15, 80],
+  $("class/id/tags").floatingText({
+    option
   });
 });
 
