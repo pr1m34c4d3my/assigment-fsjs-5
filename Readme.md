@@ -39,15 +39,14 @@ This is an example of simple style for Floating Text:
 
 ```
 span {
-  display: none;
-  font-size: 20px;
-  color: #fff;
-  position: absolute;
-  bottom: 50%;
-  transition: margin 0.8s;
-  opacity: 0.8;
-  margin: 0;
-  left: 50%;
+  display: none; // to hide the floating text, so it when it shows up, the animation of transition is looking better
+  color: #fff; // color of your floating text
+  position: absolute; // to set the position
+  bottom: 50%; // to set the position
+  transition: margin 0.8s; // adding transition time from hide to show up
+  opacity: 0.8; // opacity of the floating text
+  margin: 0; // reset margin of the floating text
+  left: 50%; // to set the position
   font-weight: 100;
 }
 ```
