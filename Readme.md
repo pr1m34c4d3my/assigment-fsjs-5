@@ -28,7 +28,9 @@ $(document).ready(function () {
 });
 ```
 
-Note: > Don't forget to add Jquery from CDN or manually into your code/hmtl [Jquery](https://code.jquery.com/jquery-3.6.2.min.js)
+Note:
+
+> Don't forget to add [Jquery](https://code.jquery.com/jquery-3.6.2.min.js) from CDN or manually into your code/hmtl
 
 ## Parameters
 
