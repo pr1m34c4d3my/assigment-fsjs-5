@@ -1,6 +1,6 @@
 # Floating Text
 
-floatingText is a Jquery plugin that can float any characters that was type in input form
+floatingText is a Jquery plugin that can float any characters that was type in input form.
 This is the [Demo](https://assigment-fsjs-5-bohokuajx-pr1m34c4d3my.vercel.app/) Site of this plugin.
 
 ## How To Use
