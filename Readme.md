@@ -58,7 +58,7 @@ Integer (number). 1 by default. A value to define speed of fading out the floati
 
 ### upperLimit
 
-Interger (number). 150 by default. A value to define maximum of how far the floating text is floating by adding margin bottom in CSS.
+Interger (number). 150 by default. A value to define maximum of how far the floating text is floating to top by adding margin bottom in CSS.
 
 ### sizeInterval
 
