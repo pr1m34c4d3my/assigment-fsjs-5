@@ -57,7 +57,7 @@ span {
 
 Integer (number). 1 by default. A value to define speed of fading out the floating characters.
 
-### Upperlimit
+### upperLimit
 
 Interger (number). 150 by default. A value to define maximum of how far the floating text is floating by adding margin bottom in CSS.
 
