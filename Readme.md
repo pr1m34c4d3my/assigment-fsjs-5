@@ -35,6 +35,8 @@ Note:
 * > I recommend to style the tag ```span``` manually because that will call by default in JS to create a floating text
 * > If you are using ```absolute``` position in ```span``` tag, don't forget to add ```relative``` position into the parent of ```span``` tag.
 
+This is an example of simple style for Floating Text:
+
 ```
 span {
   display: none;
