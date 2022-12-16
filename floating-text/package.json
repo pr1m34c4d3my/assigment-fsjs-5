@@ -1,0 +1,19 @@
+{
+  "name": "simple-floating-text",
+  "version": "1.0.0",
+  "description": "floatingText is a Jquery plugin that can float any characters that was type in input form",
+  "main": "floating-text.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "floating",
+    "text",
+    "characters",
+    "character",
+    "javascript",
+    "animation"
+  ],
+  "author": "Wisnu Budi Laksono <wisnubl1995@gmail.com>",
+  "license": "MIT"
+}
