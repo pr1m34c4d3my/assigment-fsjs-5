@@ -5,24 +5,21 @@ This is the [Demo](https://assigment-fsjs-5-bohokuajx-pr1m34c4d3my.vercel.app/) 
 
 ## How To Use
 
-1. Using NPM / Yarn
+1. Using NPM / Yarn, or also you can manually clone/download this repository
 
 ```
 npm install simple-floating-text
 or
 yarn add simple-floating-text
 ```
-
-or
-
-Clone this repository
-
 2. Load the `floating-text.js` in your \*.html
-3. Call function with Jquery and add your tags/class/id
+3. Call function with Jquery and add your tag/class/id
+
+Example:
 
 ```
 $(document).ready(function () {
-  $("class/id/tags").floatingText({
+  $("class/id/tag").floatingText({
     option
   });
 });
