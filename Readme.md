@@ -9,17 +9,16 @@ This is the [Demo](https://assigment-fsjs-5-bohokuajx-pr1m34c4d3my.vercel.app/) 
 
 ```
 npm install simple-floating-text
+or
+yarn add simple-floating-text
 ```
 
 or
 
-```
-yarn add simple-floating-text
-```
+Clone this repository
 
-2. Clone this repository
-3. Load the `floating-text.js` in your \*.html
-4. Call function with Jquery and add your tags/class/id
+2. Load the `floating-text.js` in your \*.html
+3. Call function with Jquery and add your tags/class/id
 
 ```
 $(document).ready(function () {
