@@ -8,7 +8,11 @@ floatingText is a Jquery plugin that can float any characters that was type in i
 
 ```
 npm install simple-floating-text
+```
+
 or
+
+```
 yarn add simple-floating-text
 ```
 
@@ -22,8 +26,9 @@ $(document).ready(function () {
     option
   });
 });
-
 ```
+
+Note: > Don't forget to add Jquery from CDN or manually into your code/hmtl [Jquery](https://code.jquery.com/jquery-3.6.2.min.js)
 
 ## Parameters
 
