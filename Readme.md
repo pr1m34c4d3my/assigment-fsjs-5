@@ -19,7 +19,7 @@ yarn add simple-floating-text
 
 Example:
 
-```
+```javascript
 $(document).ready(function () {
   $("class/id/tag").floatingText({
     option
@@ -36,7 +36,7 @@ Note:
 
 This is an example of simple style for floating text:
 
-```
+```css
 span {
   display: none; // to hide the floating text, so it when it shows up, the animation of transition is looking better
   color: #fff; // color of your floating text
